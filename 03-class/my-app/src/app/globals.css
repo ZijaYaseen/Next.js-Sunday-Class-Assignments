@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+    background-color: aqua;
+    color: brown;
+}
+
+.header-btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    font-size: large;
+
+
+}
