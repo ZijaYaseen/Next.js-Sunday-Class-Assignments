@@ -2,22 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    font-family: 'Times New Roman', Times, serif;
-}
 
-.header {
-    background-color: aqua;
-    color: brown;
-}
 
-.header-btn {
+.nav-logo {
     display: flex;
-    justify-content: end;
     align-items: center;
-    gap: 20px;
     padding: 20px;
-    font-size: large;
-
-
+    margin: 0 28px;
+    font-weight: 900;
+    font-size: 20px;
 }
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0 28px;
+    padding: 20px;
+}
+
+.nav-links li:hover {
+    color: #06b6d4; /* Cyan-500 color on hover */
+}
+

@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "@/components/header";
+import Footer from "../components/footer";
+import Head from 'next/head';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,10 +28,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        {/* FontAwesome CDN link*/}
+        <link
+           rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+           integrity="sha512-Fo3rlrQkzJ4z29STnV21Ekwl4ft9yEyxzgHkZjr15q9RkqMTJEOjghFG6qPWsWfDszmAFIxPkbXAdVx2ErPUPA=="
+           crossOrigin="anonymous"
+           referrerPolicy="no-referrer"
+/>
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

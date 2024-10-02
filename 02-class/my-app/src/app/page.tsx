@@ -12,7 +12,7 @@ export default function Home() {
         <div className="w-fit h-auto m-[40px] text-[40px] font-black">
           Hey,
           <br />
-          I&#39;m <span className="text-cyan-500">Zija Yaseen</span>
+          I&#39;m <span className="text-cyan-600">Zija Yaseen</span>
           <br />I am a Next.js Developer
           
           <p className="mt-4 text-[20px] text-gray-200 font-light">
