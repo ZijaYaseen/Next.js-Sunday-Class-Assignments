@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faFacebook, faGithub, faLinkedin, faYoutube} from "@fortawesome/free-brands-svg-icons";
+
 export default function Footer() {
     return (
       <footer className="bg-gray-900 text-gray-300 py-16">
@@ -40,17 +43,25 @@ export default function Footer() {
             <p className="text-gray-400">+92 3160426977</p>
             <p className="text-gray-400">zijayaseen15@gmail.com</p>
             <div className="flex justify-center md:justify-start space-x-4 text-xl mt-4">
+
+            <a href="https://www.linkedin.com/in/zija-yaseen-0154722b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="hover:text-cyan-500">
+              <FontAwesomeIcon icon={faLinkedin} size="1x" />
+              </a>
+
+            <a href="https://github.com/ZijaYaseen" target="_blank" className="hover:text-cyan-500">
+              <FontAwesomeIcon icon={faGithub} size="1x" />
+              </a>
+
               <a href="https://www.facebook.com/profile.php?id=100077844125867&mibextid=ZbWKwL" target="_blank" className="hover:text-cyan-500">
-              <i className="fa-brands fa-facebook-f"></i>
+              <FontAwesomeIcon icon={faFacebook} size="1x" />
               </a>
+
               <a href="https://www.instagram.com/zija_yaseen?igsh=YmVhMnJnc3Bvc3cy" target="_blank" className="hover:text-cyan-500">
-                <i className="fa-brands fa-instagram"></i>
+              <FontAwesomeIcon icon={faInstagram} size="1x" />
               </a>
-              <a href="https://www.linkedin.com/in/zija-yaseen-0154722b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="hover:text-cyan-500">
-                <i className="fa-brands fa-linkedin"></i>
-              </a>
+
               <a href="#" target="_blank" className="hover:text-cyan-500">
-                <i className="fa-brands fa-youtube"></i>
+              <FontAwesomeIcon icon={faYoutube} size="1x" />
               </a>
             </div>
           </div>

@@ -9,11 +9,12 @@ export default function Home() {
 <div className="flex justify-between items-center">
   
   {/* Text container */}
-  <div className="w-fit h-auto m-[40px] text-[40px] font-black">
+  <div className="w-fit h-auto m-[40px] text-[20px] ">
     Hey,
-    <br />
+    <h1 className="text-[40px] font-black">
     I&#39;m <span className="text-cyan-500">Zija Yaseen</span>
     <br />I am a Next.js Developer
+    </h1>
     
     <p className="mt-4 text-[20px] text-gray-200 font-light">
       I specialize in building modern web applications using Next.js and React, focusing on creating efficient and user-friendly experiences. My passion lies in writing clean, maintainable code while optimizing performance to ensure seamless interactions. I aim to deliver high-quality solutions that meet user needs and adhere to industry standards.
