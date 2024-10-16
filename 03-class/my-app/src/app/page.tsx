@@ -6,7 +6,7 @@ export default function Home() {
       <div className="bg-gray-800 text-gray-200 min-h-screen p-10 font-sans">
 
 {/* Main container with flex for alignment (page) uper wala div body || or ye div conatainer...*/}
-<div className="flex justify-between items-center">
+<div className="flex flex-col md:flex-row justify-between items-center">
   
   {/* Text container */}
   <div className="w-fit h-auto m-[40px] text-[20px] ">

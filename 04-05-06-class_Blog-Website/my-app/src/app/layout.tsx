@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "@/components/header";
+import NavBar from "@/components/header";
+import Head from "next/head";
 import Footer from "@/components/footer";
 
 const geistSans = localFont({
@@ -26,14 +27,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    
     <html lang="en">
+      <Head>
+        <title>Blog Website</title>
+        <meta name="description" content="Explore the latest AI technology trends and insights" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header />
+        <NavBar />
         {children}
         <Footer />
-        
       </body>
     </html>
   );
