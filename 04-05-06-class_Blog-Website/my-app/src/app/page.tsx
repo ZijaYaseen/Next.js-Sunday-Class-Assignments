@@ -13,7 +13,7 @@ export default function Home() {
   const blogs :IBlog[] = [
     {
       pic: blog1.src,
-      title: "Understanding Machine Learning",
+      title: "Understanding Machine Learning Impact and Future Potential",
       description:
         "Machine learning allows systems to analyze vast amounts of data, enabling businesses to make data-driven decisions and enhance customer experiences.",
     },
@@ -75,9 +75,9 @@ export default function Home() {
         height={192} // Add a fixed height (you can adjust this value as needed)
       />
     </div>
-    <h3 className="text-2xl font-bold text-gray-800 mt-5 ">{blog.title}</h3>
+    <h3 className="text-1xl font-bold text-gray-800 mt-5 ">{blog.title}</h3>
     <p className="mt-2 text-gray-600 flex-grow">{blog.description}</p>
-    <a href="/" className="text-blue-500 hover:underline mt-4  inline-block">
+    <a href="/machine-learning-blog" className="text-blue-500 hover:underline mt-4  inline-block">
       Read more
     </a>
   </article>
