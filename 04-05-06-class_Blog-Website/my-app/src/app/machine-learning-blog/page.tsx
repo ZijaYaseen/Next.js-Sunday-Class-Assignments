@@ -4,7 +4,7 @@ import blog1 from "@/public/blog1.jpg"
 export default function Blog1(){
   return (
   <main className="container mx-auto px-3 py-10 mt-14 w-full min-h-screen">
-    <section className="flex flex-col items-center mb-10">
+    <section className="flex flex-col md:items-center mb-10">
       <h2 className="font-serif md:text-center md:text-4xl text-3xl font-bold text-black mb-6 md:px-52">
         Understanding Machine Learning Impact and Future Potential
       </h2>

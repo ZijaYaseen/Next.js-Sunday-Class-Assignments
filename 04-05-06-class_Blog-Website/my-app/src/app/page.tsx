@@ -1,51 +1,60 @@
-import Image from "next/image";
-import blog1 from "@/public/blog1.jpg"
+import Image, { StaticImageData } from "next/image";
+import blog1 from "@/public/blog1.jpg";
+import blog2 from "@/public/blog2.png";
+import blog4 from "@/public/blog3.png";
 
 
 export default function Home() {
 
   type IBlog = {
-    pic:string,
+    pic:StaticImageData,
     title:string,
     description:string
+    path:string
   }
 
   const blogs :IBlog[] = [
     {
-      pic: blog1.src,
+      pic: blog1,
       title: "Understanding Machine Learning Impact and Future Potential",
       description:
         "Machine learning allows systems to analyze vast amounts of data, enabling businesses to make data-driven decisions and enhance customer experiences.",
-    },
+      path: "/machine-learning-blog"
+      },
     {
-      pic: blog1.src,
+      pic: blog2,
       title: "AI in Healthcare",
       description:
-        "AI is revolutionizing healthcare by improving diagnostic accuracy and personalizing treatment plans. It streamlines processes, enhances patient care, and leads to better health outcomes.",
+        "The future of healthcare combines AI with medical expertise, predicting diseases early, personalizing treatments, and enhancing care through innovation and compassion. Welcome to a new era where technology meets compassion in healthcare.",
+        path: "/ai-in-healthcare"
+      },
+    {
+      pic: blog4,
+      title: "Deep Learning Techniques in AI",
+      description:
+        "Deep learning, a powerful subset of artificial intelligence (AI), allows machines to learn from large datasets effortlessly. By using multi-layered neural networks, it uncovers intricate patterns, excelling in tasks like image and speech recognition.",
+        path: "/machine-learning-blog"
     },
     {
-      pic: blog1.src,
+      pic: blog1,
       title: "Deep Learning Techniques",
       description:
         "Discover advanced deep learning techniques used in modern AI systems.",
+        path: "/machine-learning-blog"
     },
     {
-      pic: blog1.src,
+      pic: blog1,
       title: "Deep Learning Techniques",
       description:
         "Discover advanced deep learning techniques used in modern AI systems.",
+        path: "/machine-learning-blog"
     },
     {
-      pic: blog1.src,
+      pic: blog1,
       title: "Deep Learning Techniques",
       description:
         "Discover advanced deep learning techniques used in modern AI systems.",
-    },
-    {
-      pic: blog1.src,
-      title: "Deep Learning Techniques",
-      description:
-        "Discover advanced deep learning techniques used in modern AI systems.",
+        path: "/machine-learning-blog"
     },
     // Add more blog objects as needed
   ];
@@ -77,7 +86,7 @@ export default function Home() {
     </div>
     <h3 className="text-1xl font-bold text-gray-800 mt-5 ">{blog.title}</h3>
     <p className="mt-2 text-gray-600 flex-grow">{blog.description}</p>
-    <a href="/machine-learning-blog" className="text-blue-500 hover:underline mt-4  inline-block">
+    <a href={blog.path} className="text-blue-500 hover:underline mt-4  inline-block">
       Read more
     </a>
   </article>
