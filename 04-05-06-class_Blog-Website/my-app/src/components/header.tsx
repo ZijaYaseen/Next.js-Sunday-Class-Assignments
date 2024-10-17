@@ -86,7 +86,7 @@ Agar isOpen pehle false hai toh yeh true kar dega, aur agar true hai toh false k
           <Link href="/" onClick={toggleMenu}>
             <li className="cursor-pointer text-lg">Home</li>
           </Link>
-          <Link href="/blogs" onClick={toggleMenu}>
+          <Link href="/blog" onClick={toggleMenu}>
             <li className="cursor-pointer text-lg">Articles</li>
           </Link>
           <Link href="/about" onClick={toggleMenu}>
