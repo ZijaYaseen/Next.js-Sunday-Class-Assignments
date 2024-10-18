@@ -73,7 +73,7 @@ export default function Home() {
   {blogs.map((blog) => (
     <article
   key={blog.title} 
-  className="flex flex-col md:w-[350px] md:h-[470px] bg-white p-3 rounded-3xl 
+  className="flex flex-col md:w-[350px] md:h-[490px] bg-white p-3 rounded-3xl 
              hover:shadow-2xl hover:transform hover:-translate-y-2 hover:duration-500 ease-in-out
              hover:shadow-blue-400 hover:border-4 hover:border-blue-400 border-4 border-transparent"
 >
@@ -86,7 +86,7 @@ export default function Home() {
       height={192} 
     />
   </div>
-  <h3 className="text-1xl font-bold text-gray-800 mt-5">{blog.title}</h3>
+  <h3 className="text-[20px] font-bold text-gray-800 mt-5">{blog.title}</h3>
   <p className="mt-2 text-gray-600 flex-grow">{blog.description}</p>
   <div className="self-start"> 
     <a href={blog.path} 

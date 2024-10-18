@@ -4,6 +4,7 @@ import "./globals.css";
 import NavBar from "@/components/header";
 import Head from "next/head";
 import Footer from "@/components/footer";
+import FontAwesomeConfig from "./fontawesom";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -34,6 +35,11 @@ export default function RootLayout({
         <meta name="description" content="Explore the latest AI technology trends and insights" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
+      <head>
+        <FontAwesomeConfig />
+      </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
