@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
-import blog1 from "@/public/blog1.jpg";
+import blog1 from "@/public/blog1.png";
 import blog2 from "@/public/blog2.png";
-import blog4 from "@/public/blog3.png";
+import blog3 from "@/public/blog3.png";
 
 
 export default function Home() {
@@ -29,11 +29,11 @@ export default function Home() {
         path: "/ai-in-healthcare"
       },
     {
-      pic: blog4,
+      pic: blog3,
       title: "Deep Learning Techniques in AI",
       description:
         "Deep learning, a powerful subset of artificial intelligence (AI), allows machines to learn from large datasets effortlessly. By using multi-layered neural networks, it uncovers intricate patterns, excelling in tasks like image and speech recognition.",
-        path: "/machine-learning-blog"
+        path: "/deep-learning-blog"
     },
     {
       pic: blog1,
@@ -72,24 +72,32 @@ export default function Home() {
         <section className="flex flex-wrap gap-6 justify-center">
   {blogs.map((blog) => (
     <article
-    key={blog.title} // Use a unique identifier for the key
-    className="md:w-[350px] md:h-[450px] bg-white p-3 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col"
-  >
-    <div>
-      <Image
-        src={blog.pic} // Use the blog's pic property
-        alt={`Image for ${blog.title}`} // Dynamic alt text
-        className="w-full h-48 rounded-lg"
-        width={350} // Add a fixed width
-        height={192} // Add a fixed height (you can adjust this value as needed)
-      />
-    </div>
-    <h3 className="text-1xl font-bold text-gray-800 mt-5 ">{blog.title}</h3>
-    <p className="mt-2 text-gray-600 flex-grow">{blog.description}</p>
-    <a href={blog.path} className="text-blue-500 hover:underline mt-4  inline-block">
-      Read more
+  key={blog.title} 
+  className="flex flex-col md:w-[350px] md:h-[470px] bg-white p-3 rounded-3xl 
+             hover:shadow-2xl hover:transform hover:-translate-y-2 hover:duration-500 ease-in-out
+             hover:shadow-blue-400 hover:border-4 hover:border-blue-400 border-4 border-transparent"
+>
+  <div>
+    <Image
+      src={blog.pic} 
+      alt={`Image for ${blog.title}`}
+      className="w-full h-48 rounded-lg shadow-md transition-shadow shadow-gray-500"
+      width={350} 
+      height={192} 
+    />
+  </div>
+  <h3 className="text-1xl font-bold text-gray-800 mt-5">{blog.title}</h3>
+  <p className="mt-2 text-gray-600 flex-grow">{blog.description}</p>
+  <div className="self-start"> 
+    <a href={blog.path} 
+       className="inline-block border-2 border-black rounded-2xl px-4 py-2 text-black mt-4
+                  transition-all duration-300 ease-in-out hover:bg-blue-500 hover:text-white
+                  hover:border-blue-500">
+       Read more
     </a>
-  </article>
+  </div>
+</article>
+
   
   ))}
 </section>

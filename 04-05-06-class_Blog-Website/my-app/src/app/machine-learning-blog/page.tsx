@@ -1,5 +1,5 @@
 import Image from "next/image"
-import blog1 from "@/public/blog1.jpg"
+import blog1 from "@/public/blog1.png"
 
 export default function Blog1(){
   return (
