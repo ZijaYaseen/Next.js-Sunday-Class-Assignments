@@ -2,6 +2,9 @@ import Image, { StaticImageData } from "next/image";
 import blog1 from "@/public/blog1.png";
 import blog2 from "@/public/blog2.png";
 import blog3 from "@/public/blog3.png";
+import blog4 from "@/public/blog4.png";
+import blog5 from "@/public/blog5.png";
+import blog6 from "@/public/blog6.png";
 
 
 export default function Home() {
@@ -36,26 +39,26 @@ export default function Home() {
         path: "/deep-learning-blog"
     },
     {
-      pic: blog1,
-      title: "Deep Learning Techniques",
+      pic: blog4,
+      title: "Natural Language Processing: Revolutionizing Communication",
       description:
-        "Discover advanced deep learning techniques used in modern AI systems.",
-        path: "/machine-learning-blog"
+        "Natural Language Processing (NLP) bridges the gap between human language and computers. From chatbots to language translation, NLP is transforming how we interact with technology.",
+      path: "/deep-learning-blog"
     },
     {
-      pic: blog1,
-      title: "Deep Learning Techniques",
+      pic: blog5,
+      title: "The Role of AI in Autonomous Vehicles",
       description:
-        "Discover advanced deep learning techniques used in modern AI systems.",
-        path: "/machine-learning-blog"
+        "AI is the driving force behind autonomous vehicles, making transportation smarter and safer. With advancements in AI algorithms and sensor technologies, self-driving cars are becoming a reality.",
+      path: "/deep-learning-blog"
     },
     {
-      pic: blog1,
-      title: "Deep Learning Techniques",
+      pic: blog6,
+      title: "Ethics in Artificial Intelligence",
       description:
-        "Discover advanced deep learning techniques used in modern AI systems.",
-        path: "/machine-learning-blog"
-    },
+        "As AI continues to evolve, ethical considerations become crucial. Balancing innovation with responsibility, the conversation around AI ethics ensures that technology benefits society while safeguarding human rights and privacy.",
+      path: "/deep-learning-blog"
+    }
     // Add more blog objects as needed
   ];
 
