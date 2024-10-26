@@ -93,7 +93,7 @@ export default function Home() {
   <p className="mt-2 text-gray-600 flex-grow">{blog.description}</p>
   <div className="self-start"> 
     <a href={blog.path} 
-       className="inline-block border-2 border-black rounded-2xl px-4 py-2 text-black mt-4
+       className="border-2 border-black rounded-2xl px-4 py-2 text-black mt-4
                   transition-all duration-300 ease-in-out hover:bg-blue-500 hover:text-white
                   hover:border-blue-500">
        Read more

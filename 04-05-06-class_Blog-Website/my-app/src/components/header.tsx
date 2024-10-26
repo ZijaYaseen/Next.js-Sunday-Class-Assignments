@@ -14,7 +14,7 @@ Agar isOpen pehle false hai toh yeh true kar dega, aur agar true hai toh false k
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 flex justify-between items-center bg-blue-900 text-white ">
+    <div className="fixed top-0 left-0 right-0 flex justify-between items-center bg-blue-900 text-white z-10 ">
       <div className="flex items-center p-3 md:mx-7 my-0 font-black text-[20px]">
         <Image src={Logo} alt="Logo" width={60} height={60} />
         INNOVATIVE CUBE
