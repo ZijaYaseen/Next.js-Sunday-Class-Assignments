@@ -31,7 +31,8 @@ import GroupMacBook from "@/public/Macbook 1.png";
 import { useState, useRef, useEffect } from 'react';
 import iphone142 from "@/public/Iphone 14 pro 1 (8).png";
 import iphone1423 from "@/public/Iphone 14 pro 1 (10).png";
-import deskBanner from "@/public/Banner 2 (1).png";
+import deskBanner from "@/public/banner.png";
+import deskBanner2 from "@/public/bannermbl.png";
 
 
 // import Slider from "react-slick";
@@ -412,7 +413,7 @@ useEffect(() => {
             {/* Scrollable Section */}
             <section
                 ref={scrollContainerRef}
-                className="flex items-center md:items-start overflow-x-scroll"
+                className="flex items-center md:items-start overflow-x-scroll md:overflow-x-hidden"
             >
                 {productsHorizontalScrollBar.map((product, index) => (
                     <div
@@ -451,6 +452,28 @@ useEffect(() => {
 {/* -------------------------------*************------------------------------------- */}
 
       {/* 6th section start Home ka. */}
+
+      <div 
+  style={{
+    backgroundImage: `url(${deskBanner2.src})`,
+    backgroundImage: `url(${deskBanner.src})` // Next.js 15 me `.src` ke saath imported image ka path lagayein
+    
+  }}
+  className="h-[448px] bg-cover grid place-items-center text-white text-center"
+>
+  <div>
+    <h1 className="font-thin md:text-7xl text-5xl">Big Summer <span className="font-medium">Sale</span></h1>
+    <p className="font-normal text-base mb-10">Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
+    <button className="font-medium text-base px-14 py-4 border-[1px] border-white rounded-lg">
+      Shop Now
+    </button>
+  </div>
+</div>
+
+{/* -------------------------------*************------------------------------------- */}
+
+{/* Last section start Home ka. */}
+
     <div className="py-14 md:py-20 md:px-40 px-4 bg-[#FFFFFF]">
       <div className="mb-8">
         <h2 className="font-medium text-2xl">Discounts up to -50%</h2>
@@ -475,11 +498,8 @@ useEffect(() => {
      
 {/* -------------------------------*************------------------------------------- */}
 
-      {/* Last section start Home ka. */}
+   
 
-      <div className={`bg-url(${deskBanner})`}>
-
-      </div>
     </main>
   );
 }
