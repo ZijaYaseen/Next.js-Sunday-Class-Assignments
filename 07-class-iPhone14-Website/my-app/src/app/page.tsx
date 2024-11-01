@@ -417,7 +417,7 @@ useEffect(() => {
                 {productsHorizontalScrollBar.map((product, index) => (
                     <div
                         key={index}
-                        className={`flex-shrink-0 md:w-[340px] w-[375px] px-8 h-[640px] ${product.bgColor} snap-start`}
+                        className={`flex-shrink-0 w-[340px] px-8 h-[640px] ${product.bgColor} snap-start`}
                         data-index={index}
                     >
                         <Image src={product.image} alt={product.title} className="w-full h-[366px] object-cover" />
