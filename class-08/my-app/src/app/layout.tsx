@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "@/components/header"
-import Footer from "@/components/footer";
-import CarouselDots from "@/carousel"
+import FBSignIn from "@/app/home/page";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,15 +26,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <CarouselDots />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header />
+        <FBSignIn/>
         {children}
-        <Footer />
       </body>
     </html>
   );

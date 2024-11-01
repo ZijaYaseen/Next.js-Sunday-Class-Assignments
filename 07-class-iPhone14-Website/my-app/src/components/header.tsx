@@ -10,6 +10,8 @@ import { useState } from "react"; //
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false); // State to toggle the mobile menu
 
+  const [searchQuery, setSearchQuery] = useState('');
+
   return (
     <header className="flex justify-between items-center p-4 md:mx-36 font-sans">
       {/* Logo */}
@@ -18,10 +20,16 @@ export default function Header() {
       </div>
 
       {/* Search bar (visible on desktop only) */}
-      <div className="hidden md:flex p-4 bg-[#F5F5F5] w-[372px] h-[56px] rounded-lg">
-        <CiSearch size={24} className="text-[#989898]" />
-        <p className="ml-2 text-[#989898] font-medium text-sm font-sans">Search</p>
-      </div>
+      <div className="hidden md:flex items-center p-4 bg-[#F5F5F5] w-[372px] h-[56px] rounded-lg">
+            <CiSearch size={24} className="text-[#989898]" />
+            <input
+                type="search"
+                placeholder="Search"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="ml-2 w-full bg-[#F5F5F5] text-[#989898] font-medium text-sm font-sans outline-none"
+            />
+        </div>
 
       {/* Desktop Links */}
       <div className="hidden md:flex">
