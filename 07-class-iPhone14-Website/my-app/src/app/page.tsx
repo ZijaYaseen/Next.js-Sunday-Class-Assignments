@@ -204,7 +204,7 @@ useEffect(() => {
 
 
   return (
-    <main>
+    <main className="md:mt-[88px] mt-14">
       {/* Home container 1st Part */}
       <div className="flex flex-col md:flex-row justify-between bg-[#211C24] h-[769px] md:h-[632px] items-center text-white pt-[88px] px-4 md:p-32">
         <div className="text-center md:text-left mb-8 md:mb-0">
