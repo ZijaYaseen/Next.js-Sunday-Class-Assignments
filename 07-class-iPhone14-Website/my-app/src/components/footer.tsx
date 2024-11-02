@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="items-center md:items-start">
           <Image src={Logo} alt="Logo" className="mx-auto md:mx-0" /> {/* Logo center in mobile */}
           <p className="mt-6 font-normal text-sm">
-            We are a residential interior design firm located in<br />Portland.
+            We are a residential interior design firm located <br />in Portland.
             Our boutique-studio offers more than design.
           </p>
         </div>

@@ -459,7 +459,7 @@ useEffect(() => {
     backgroundImage: `url(${deskBanner.src})` // Next.js 15 me `.src` ke saath imported image ka path lagayein
     
   }}
-  className="h-[448px] bg-cover grid place-items-center text-white text-center"
+  className="h-[448px] bg-cover grid place-items-center text-white text-center md:bg-[url('/public/banner.png')]"
 >
   <div>
     <h1 className="font-thin md:text-7xl text-5xl">Big Summer <span className="font-medium">Sale</span></h1>
