@@ -32,7 +32,7 @@ import { useState, useRef, useEffect } from 'react';
 import iphone142 from "@/public/Iphone 14 pro 1 (8).png";
 import iphone1423 from "@/public/Iphone 14 pro 1 (10).png";
 import deskBanner from "@/public/banner.png";
-import deskBanner2 from "@/public/bannermbl.png";
+// import deskBanner2 from "@/public/bannermbl.png";
 
 
 // import Slider from "react-slick";
@@ -455,7 +455,7 @@ useEffect(() => {
 
       <div 
   style={{
-    backgroundImage: `url(${deskBanner2.src})`,
+    // backgroundImage: `url(${deskBanner2.src})`,
     backgroundImage: `url(${deskBanner.src})` // Next.js 15 me `.src` ke saath imported image ka path lagayein
     
   }}
